@@ -1,0 +1,24 @@
+{
+  "name": "cli-app-boilerplate",
+  "version": "1.0.0",
+  "description": "My personal boilerplate for cli apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "boilerplate"
+  ],
+  "author": "Oussama Barkouki",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/polyfill": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
+    "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0"
+  }
+}
