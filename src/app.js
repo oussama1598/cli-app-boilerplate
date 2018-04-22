@@ -1,4 +1,5 @@
 import program from 'commander';
+import config from 'config';
 import { version } from '../package.json';
 
 program
@@ -9,5 +10,6 @@ program
 (async function main() {
   if (!program.args.length) return program.outputHelp();
 
+  console.log(config);
   return null;
 })();
