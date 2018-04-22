@@ -10,8 +10,7 @@ const plugins = gulpLoadPlugins();
 const paths = {
   dist: 'dist',
   src: {
-    scripts: ['src/**/!(*.spec|*.integration).js'],
-    json: ['src/**/*.json']
+    scripts: ['src/**/!(*.spec|*.integration).js']
   }
 };
 
@@ -42,7 +41,7 @@ gulp.task('copy:server', () =>
 
 gulp.task('transpile:server', () =>
   gulp
-    .src(paths.src.scripts.concat(paths.src.json))
+    .src(paths.src.scripts)
     .pipe(plugins.sourcemaps.init())
     .pipe(
       plugins.babel({
