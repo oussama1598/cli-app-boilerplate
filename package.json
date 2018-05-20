@@ -5,13 +5,25 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    "build": "gulp build"
+    "build": "gulp build",
+    "prepublish": "gulp build"
   },
-  "keywords": [
-    "cli",
-    "boilerplate"
-  ],
-  "author": "Oussama Barkouki",
+  "keywords": ["cli", "boilerplate"],
+  "author": {
+    "name": "Oussama Barkouki",
+    "email": "oussama1598@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oussama1598/cli-app-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oussama1598/cli-app-boilerplate/issues"
+  },
+  "files": ["dist"],
+  "bin": {
+    "bin": "dist/index.js"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.44",
