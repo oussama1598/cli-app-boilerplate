@@ -6,9 +6,12 @@
   "scripts": {
     "lint": "eslint src",
     "build": "gulp build",
-    "prepublish": "gulp build"
+    "install_bin": "set NODE_ENV=production && npm install && npm link"
   },
-  "keywords": ["cli", "boilerplate"],
+  "keywords": [
+    "cli",
+    "boilerplate"
+  ],
   "author": {
     "name": "Oussama Barkouki",
     "email": "oussama1598@gmail.com"
@@ -20,35 +23,34 @@
   "bugs": {
     "url": "https://github.com/oussama1598/cli-app-boilerplate/issues"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "bin": {
-    "bin": "dist/index.js"
+    "app-name-bin": "index.js"
   },
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.44",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.44",
-    "@babel/polyfill": "^7.0.0-beta.44",
-    "@babel/preset-env": "^7.0.0-beta.44",
-    "@babel/register": "^7.0.0-beta.44",
-    "babel-eslint": "^8.2.2",
-    "del": "^3.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^8.0.0-beta.2",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-remove-code": "^2.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "run-sequence": "^2.2.1"
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/register": "^7.4.4",
+    "babel-eslint": "^10.0.2",
+    "del": "^5.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-remove-code": "^3.0.4",
+    "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.44",
-    "app-module-path": "^2.2.0",
-    "commander": "^2.15.1",
-    "flavors": "^3.3.1"
+    "@babel/runtime": "^7.5.2",
+    "commander": "^2.20.0",
+    "flavors": "^4.1.1"
   }
 }
