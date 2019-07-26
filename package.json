@@ -51,6 +51,8 @@
   "dependencies": {
     "@babel/runtime": "^7.5.2",
     "commander": "^2.20.0",
-    "flavors": "^4.1.1"
+    "flavors": "^4.1.1",
+    "serialize-error": "^4.1.0",
+    "winston": "^3.2.1"
   }
 }

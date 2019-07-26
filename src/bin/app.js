@@ -1,6 +1,7 @@
 import program from 'commander';
+import loggerService from '../services/logger';
 import config from '../config';
-import { version } from '../package.json';
+import { version } from '../../package.json';
 
 program.version(version).usage('[options] <name>');
 
@@ -13,9 +14,11 @@ program.version(version).usage('[options] <name>');
 */
 
 (async function main() {
-  if (!program.args.length) return program.outputHelp();
+  // if (!program.args.length) return program.outputHelp();
 
-  console.log(config);
+  const logger = loggerService(false);
+
+  logger.info(config);
   return null;
 })();
 
